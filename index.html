@@ -3,54 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nitin's 3D Portfolio</title>
+  <title>Nitin Kumar Singh | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Blurred Cartoon Background -->
-  <div class="background">
-    <img src="assets/developer.png" class="developer-bg" alt="Developer Cartoon" />
-  </div>
+  <header class="navbar">
+    <div class="logo">Nitin.dev</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Main 3D Card -->
-  <div class="container">
-    <div class="card" id="card">
-      <h1>Hello, I'm <span>Nitin</span></h1>
-      <p>A Creative Web Developer</p>
-      <button id="exploreBtn">Explore My Work</button>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Nitin Kumar Singh</span></h1>
+      <p>A passionate Web Developer & Tech Enthusiast</p>
+      <a href="#projects" class="cta">Explore My Work</a>
     </div>
-  </div>
+    <div class="hero-img">
+      <img src="assets/developer.png" alt="Developer" />
+    </div>
+  </section>
 
-  <!-- Modal Project Section -->
-  <div class="modal" id="projectModal">
-    <div class="modal-content">
-      <span class="close-btn" id="closeBtn">&times;</span>
-      <h2>My Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>🌍 Travelling Web Page</h3>
-          <p>Responsive tourism website using HTML, CSS & JS for booking and exploration.</p>
-        </div>
-        <div class="project-card">
-          <h3>💳 Credit Card Fraud Detection</h3>
-          <p>ML-based model to detect fraudulent transactions using scikit-learn.</p>
-        </div>
-        <div class="project-card">
-          <h3>📜 Certificate Distribution System</h3>
-          <p>Blockchain app built on Solidity for secure certificate issuing and verification.</p>
-        </div>
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>I'm a Computer Science undergraduate from Galgotias University. I specialize in creating responsive web applications, RPA automation, and blockchain-powered solutions. I love building tech that solves real-world problems.</p>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>🌍 Travelling Web Page</h3>
+        <p>A tourism website built with HTML, CSS, and JS for trip planning and booking.</p>
+      </div>
+      <div class="project">
+        <h3>💳 Credit Card Fraud Detection</h3>
+        <p>ML model using Python to detect suspicious transactions in real-time.</p>
+      </div>
+      <div class="project">
+        <h3>📜 Certificate Distribution System</h3>
+        <p>Smart contract-based system for issuing verifiable certificates on blockchain.</p>
       </div>
     </div>
-    <h2 style="margin-top: 40px;">My Skills</h2>
-  <div class="skills">
-    <div class="skill">🟧 HTML</div>
-    <div class="skill">🟦 CSS</div>
-    <div class="skill">🟨 JavaScript</div>
-    <div class="skill">🐍 Python</div>
-    <div class="skill">🤖 RPA Tools</div>
-  </div>
-  </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>RPA Tools</span>
+      <span>Solidity</span>
+      <span>GitHub</span>
+      <span>React (basic)</span>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to work with me or have any questions, feel free to connect!</p>
+    <a href="mailto:nitinkumarsingh@email.com" class="cta">Email Me</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Nitin Kumar Singh. All Rights Reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
